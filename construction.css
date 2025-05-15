@@ -1,0 +1,26 @@
+#footerCon {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  #come-back{
+    color: var(--yellow);
+    text-decoration: none;
+}
+
+#come-back:hover{
+    color: var(--orange);
+}
+
+#come-back:visited{
+    text-decoration: none;
+}
+
+
+
+.under-construction{
+    margin: 10%;
+}

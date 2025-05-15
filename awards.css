@@ -1,0 +1,141 @@
+
+/* About Styles */
+#about {
+    background-color: var(--light-bg);
+    color: var(--light-text);
+    padding: 40px;
+    padding-top: 0;
+  }
+
+  .about-text{
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: center;
+    color: var(--dark-text);
+    margin-bottom: 20px;
+  }
+
+  .title-case{
+    margin: 0;
+  }
+
+
+  #Twenty-four{
+    background-color: var(--yellow);
+    color: var(--dark-text);
+    padding: 40px;
+  }
+
+  
+  .section-case{
+    background-color: var(--dark-text);
+    color: var(--yellow);
+    padding: 40px;
+    text-align: center;
+    margin: 0;
+    font-family: "Bagel Fat One", system-ui;
+    letter-spacing: 2px;
+    font-size: 25px;
+  }
+
+  .section-bio{
+    background-color: var(--light-bg);
+    color: var(--yellow);
+    padding: 40px;
+    text-align: center;
+    margin: 0;
+    font-family: "Bagel Fat One", system-ui;
+    letter-spacing: 2px;
+    font-size: 25px;
+    position: sticky;
+  }
+
+  .slideshowContainerChandler {
+    position: relative;
+    width: 80%;
+    max-width: 1000px;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 12px;
+    margin: 0 auto;
+  }
+
+  #slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;                /* Flexbox to center the image */
+    justify-content: center;      /* Horizontally center the image */
+    align-items: center;          /* Vertically center the image */
+    transition: transform 1s ease-in-out;            /* Prevent overflow of images */
+  }
+  
+  .slide img {
+    max-width: 90%;               /* Limit the image width */
+    max-height: 90%;              /* Limit the image height */
+    object-fit: contain;          /* Ensure image retains its aspect ratio */
+    border-radius: 12px;
+  }
+
+  .slide:not(.active) {
+    z-index: 0;
+  }
+
+  .slide.active {
+    z-index: 1;
+  }
+
+  .nav-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  .nav-buttons button {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    pointer-events: all;
+    transition: background 0.3s ease;
+  }
+
+  .nav-buttons button:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .right {
+  color: white;
+  padding: 40px;
+  border-radius: 10px;
+  font-size: 24px;
+  text-align: center;
+  max-width: 80%;
+  flex: center;
+  }
+
+  .right-text{
+    max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: center;
+  color: var(--light-text);
+  margin-bottom: 20px;
+  }

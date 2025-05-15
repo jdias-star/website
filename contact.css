@@ -1,0 +1,126 @@
+
+.contact-schedule-container {
+  padding: 60px 20px;
+  background-color: var(--dark-bg);
+  font-family: "Baloo 2", sans-serif;
+  color: var(--dark-text);
+}
+
+.contact-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 1000px;
+  margin: 0 auto 60px;
+  color: var(--light-text);
+  flex-wrap: wrap;
+  border-style: solid;
+  border-color: var(--yellow);
+}
+
+#border{
+  border-style: solid;
+  border-color: var(--yellow);
+}
+
+.contact-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.contact-logo {
+  max-width: 280px;
+  height: auto;
+  border-radius: 12px;
+}
+
+.vertical-line {
+  width: 4px;
+  height: 200px;
+  background-color: var(--yellow);
+  margin: 0 30px;
+}
+
+.contact-right {
+  flex: 2;
+  padding: 20px;
+  min-width: 250px;
+}
+
+.name-bold {
+  font-weight: 800;
+  font-size: 28px;
+}
+
+.name-yellow {
+  color: var(--yellow);
+  font-weight: 800;
+  font-size: 28px;
+}
+
+.title {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  color: var(--yellow);
+}
+
+.section-title {
+  font-family: "Bagel Fat One", system-ui;
+  font-size: 36px;
+  color: var(--yellow);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.schedule-widget {
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow-y: hidden;
+  padding-bottom: 15px;
+}
+
+#calendly{
+  min-width:500px;
+  height:700px;
+  overflow-y: hidden;
+}
+.calendy-inline-widget{
+  overflow: hidden;
+}
+
+.schedule-widget html{
+overflow: hidden !important;
+}
+
+@media (max-width: 768px) {
+  .contact-card {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .contact-left {
+    margin-bottom: 20px;
+  }
+
+  .vertical-line {
+    display: none;
+  }
+
+  .contact-right {
+    min-width: auto;
+  }
+}

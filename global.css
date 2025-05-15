@@ -1,0 +1,370 @@
+/* Color Variables */
+:root {
+    --yellow: #fbc02d; /* Vibrant Yellow */
+    --orange: #fb8c00; /* Bold Orange */
+    --dark-bg: #121212; /* Dark Background for contrast */
+    --light-bg: #f5f5f5; /* Light Background for sections */
+    --dark-text: #212121; /* Dark Text */
+    --light-text: #ffffff; /* Light Text */
+    --accent: #f57c00; /* Accent color */
+    --border-color: #bdbdbd; /* Border color for structure */
+    --black: #000000; /* Black for text and backgrounds */
+  }
+  
+  
+  body {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+    font-family: "Baloo 2", sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    cursor: default;
+  }
+
+  body::-webkit-scrollbar{
+    display: none;
+  }
+
+  .progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+  }
+  
+  /* The progress bar (scroll indicator) */
+  .progress-bar {
+    height: 8px;
+    background: #04AA6D;
+    width: 0%;
+  }
+  
+
+    /* Navbar */
+  .navbar {
+  background: var(--black);
+  padding: 16px;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.menu.left {
+  justify-content: flex-start;
+}
+
+.menu.right {
+  justify-content: flex-end;
+}
+
+.menu li {
+  margin: 0 15px;
+  font-size: 25px;
+}
+
+#navMenuRight{
+  overflow: hidden;
+}
+.menu a {
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s;
+  color: var(--light-text);
+}
+
+ul#navHam{
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 5px;
+  text-align: center;
+  font-size: x-large;
+}
+
+li.navButton a{
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s;
+  color: var(--light-text);
+  font-family: "Bagel Fat One", system-ui;
+  letter-spacing: 2px;
+}
+li.navButton a:hover{
+  color: var(--orange);
+}
+
+.menu a:hover {
+  color: var(--orange);
+}
+
+#title {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Bagel Fat One", system-ui;
+  text-align: center;
+  margin: 0 20px;
+  flex-grow: 1;
+  color: var(--yellow);
+}
+
+#title a {
+  text-decoration: none;
+  color: var(--yellow);
+}
+
+#title a:hover {
+  color: var(--orange);
+}
+
+#color {
+  color: var(--yellow);
+  font-size: small;
+  margin-left: 10px;
+}
+
+#color:hover {
+  color: var(--orange);
+  cursor: pointer;
+}
+
+/* Hamburger is hidden by default */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px;
+  color: var(--accent);
+}
+
+
+/*General Styles*/
+  .title-case{
+    font-family: "Bagel Fat One", system-ui;
+    font-size: 50px;
+    color: var(--yellow);
+    text-align: center;
+    margin-top: 20px;
+  }
+
+
+
+
+
+  
+  /* Footer */
+  footer {
+    background-color: var(--black);
+    color: var(--light-text);
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer .social-media a {
+    color: var(--light-text);
+    margin: 0 10px;
+    font-size: 1.5rem;
+  }
+  
+  footer .social-media a:hover {
+    color: var(--orange);
+  }
+
+  #color{
+    color: var(--yellow);
+    font-size: small;
+  }
+
+  #color:hover{
+    color: var(--orange);
+    cursor: pointer;
+  }
+
+
+  /*Gallery*/
+  .categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 20px;
+    background-color: var(--dark-bg);
+  }
+
+  .gallery-btn {
+    position: relative;
+    padding-top: 120%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    overflow: hidden;
+    text-decoration: none;
+    justify-content: space-evenly;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    align-items: flex-start;
+    height: 250px;
+  }
+
+  .gallery-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.0); /* Transparent initially */
+    transition: background 0.5s ease;
+    z-index: 0;
+  }
+
+  .gallery-btn:hover::before {
+    background: rgba(0, 0, 0, 0.5); /* Darkens on hover */
+  }
+
+  .gallery-text {
+    position: relative;
+    z-index: 0; /* Ensure the text is above the overlay */
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .gallery-text h3 {
+    margin: 0;
+    font-size: 24px;
+    color: var(--light-text);
+  }
+
+  .extra-info {
+    margin-top: 10px;
+    opacity: 0; /* Hidden initially */
+    transform: translateY(20px); /* Move the text down slightly */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    color: var(--light-text)
+  }
+
+  .gallery-btn:hover .extra-info {
+    opacity: 1; /* Fade in extra text on hover */
+    transform: translateY(0); /* Move the text up to the original position */
+  }
+
+  .gallery-btn:hover .gallery-text {
+    transform: translateY(-20px); /* Move main text up */
+    color: var(--light-text);
+  }
+
+  .gallery-btn:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  .gallery-btn:hover .gallery-text h3 {
+    color: var(--orange);
+  }
+
+  .button{
+    padding: 10px;
+    transition: color 0.3s;
+    justify-content: center;
+    display: flex;
+  }
+
+  .button a{
+    text-decoration: none;
+    font-family: "Bagel Fat One", system-ui;
+    color: var(--light-text);
+    font-size: 25px;
+  }
+
+  .button a:hover {
+    color: var(--orange);
+    cursor: pointer;
+  }
+
+  .hidden{
+    display: none !important;
+  }
+
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: stretch;
+      padding: 0;
+    }
+  
+    #title {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 10px 0;
+      text-align: center;
+      font-size: 40px;
+      letter-spacing: 2px;
+    }
+  
+    .menu {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  
+    .menu li {
+      margin: 10px;
+    }
+
+    li.right{
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #title {
+    font-size: 24px;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .hamburger {
+    display: block;
+    align-self: center;
+    color: var(--yellow);
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .menu.open {
+    display: flex !important;
+  }
+
+  .menu li {
+    margin: 10px 0;
+    font-size: 20px;
+  }
+
+   .categories {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Yellow Project Photography</title>
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <link rel="stylesheet" href="global.css" title="main-stylesheet">
+  <link rel="stylesheet" href="gallery.css">
+  <link rel="stylesheet" href="awards.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+  <ul class="menu left" id="navMenuLeft">
+    <li class="navButton"><a href="about.html">About</a></li>
+    <li class="navButton"><a href="gallery.html">Galleries</a></li>
+    <li class="navButton"><a href="awards.html">Awards</a></li>
+  </ul>
+
+  <h1 id="title">
+    <a href="index.html">My Yellow Project Photography</a>
+  </h1>
+
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+  <ul class="menu right" id="navMenuRight">
+    <li id="navContact"><a href="contact.html">Contact</a></li>
+  </ul>
+
+  <ul id="navHam" style="display: none;">
+    <li class="navButton"><a href="about.html">About</a></li>
+    <li class="navButton"><a href="gallery.html">Galleries</a></li>
+    <li class="navButton"><a href="awards.html">Awards</a></li>
+    <li class="navButton"><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+  <!-- SildeShow -->
+  <div class="container">
+        <div class="slideshowContainerChandler">
+            <div id="slidesChandler"></div>
+            <div class="nav-buttons">
+              <button onclick="prevSlide()">⟵ Prev</button>
+              <button onclick="nextSlide()">Next ⟶</button>
+            </div>
+  </div>
+  </div>
+
+  <!--Gallery-->
+  <section id="galleries" class="section">
+    <h2 class="title-case">Galleries</h2>
+
+
+    <!-- Search Bar -->
+    <div class="searchbar">
+    <input type="text" id="searchInput" placeholder="Search Galleries..." />
+    <button id="searchButton" onclick="search()">Search</button>
+    <br>
+    </div>
+    <ul id="historyList"></ul>
+    <ul class="button" id="viewAll" ><a href="Photos/Galleries/gallery.html">View All Photos</a></ul>
+    
+    
+    <div class="categories">
+      <a href="gallery-Lacrosse.html" class="gallery-btn" data-name="Lacrosse" style="background-image: url('photos/Galleries/Sports/lacrosse.JPG');">
+        <div class="gallery-text">
+            <h3>Lacrosse</h3>
+            <div class="extra-info">
+              <p>Click to View More</p>
+          </div>
+        </div>
+    </a>
+    <a href="gallery-Baseball.html" class="gallery-btn" style="background-image: url('photos/Galleries/Sports/baseball.jpg');">
+      <div class="gallery-text">
+          <h3>Baseball</h3>
+          <div class="extra-info">
+            <p>Click to View More</p>
+        </div>
+      </div>
+  </a>
+  <a href="gallery-Softball.html" class="gallery-btn" style="background-image: url('photos/Galleries/Sports/softball.jpg');">
+    <div class="gallery-text">
+        <h3>Softball</h3>
+        <div class="extra-info">
+          <p>Click to View More</p>
+      </div>
+    </div>
+</a>
+<!-- <a href="gallery-FieldHockey.html" class="gallery-btn" style="background-image: url('photos/Galleries/Sports/error.png');">
+  <div class="gallery-text">
+      <h3>Field Hockey</h3>
+      <div class="extra-info">
+        <p>Click to View More</p>
+    </div>
+  </div>
+</a> -->
+<!-- <a href="gallery-Hockey.html" class="gallery-btn" style="background-image: url('photos/Galleries/Sports/error.png');">
+  <div class="gallery-text">
+      <h3>Hockey</h3>
+      <div class="extra-info">
+        <p>Click to View More</p>
+    </div>
+  </div>
+</a> -->
+<a href="gallery-Rugby.html" class="gallery-btn" style="background-image: url('photos/Galleries/Sports/rugby.JPG');">
+  <div class="gallery-text">
+      <h3>Rugby</h3>
+      <div class="extra-info">
+        <p>Click to View More</p>
+    </div>
+  </div>
+</a>
+<a href="gallery-Soccer.html" class="gallery-btn" style="background-image: url('photos/Galleries/Sports/soccer.jpg');">
+  <div class="gallery-text">
+      <h3>Soccer</h3>
+      <div class="extra-info">
+        <p>Click to View More</p>
+    </div>
+  </div>
+</a>
+<a href="gallery-Football.html" class="gallery-btn" style="background-image: url('photos/Galleries/Sports/football.jpg');">
+  <div class="gallery-text">
+      <h3>Football</h3>
+      <div class="extra-info">
+        <p>Click to View More</p>
+    </div>
+  </div>
+</a>
+<a href="gallery-FlagFootball.html" class="gallery-btn" style="background-image: url('photos/Galleries/Sports/flagfootball.jpg');">
+  <div class="gallery-text">
+      <h3>Flag Football</h3>
+      <div class="extra-info">
+        <p>Click to View More</p>
+    </div>
+  </div>
+</a>
+<a href="gallery-Cheer.html" class="gallery-btn" style="background-image: url('photos/Galleries/Sports/cheer.jpg');">
+  <div class="gallery-text">
+      <h3>Cheer</h3>
+      <div class="extra-info">
+        <p>Click to View More</p>
+    </div>
+  </div>
+</a>
+<!-- <a href="gallery-Spirtline.html" class="gallery-btn" style="background-image: url('photos/Galleries/Sports/error.png');">
+  <div class="gallery-text">
+      <h3>Spirtline</h3>
+      <div class="extra-info">
+        <p>Click to View More</p>
+    </div>
+  </div>
+</a> -->
+<a href="gallery-Volleyball.html" class="gallery-btn" style="background-image: url('photos/Galleries/Sports/volleyball.jpg');">
+  <div class="gallery-text">
+      <h3>Volleyball</h3>
+      <div class="extra-info">
+        <p>Click to View More</p>
+    </div>
+  </div>
+</a>
+<!-- <a href="gallery-BeachVolleyball.html" class="gallery-btn" style="background-image: url('photos/Galleries/Sports/error.png');">
+  <div class="gallery-text">
+      <h3>Beach Volleyball</h3>
+      <div class="extra-info">
+        <p>Click to View More</p>
+    </div>
+  </div>
+</a> -->
+<a href="gallery-Basketball.html" class="gallery-btn" style="background-image: url('photos/Galleries/Sports/basketball.jpg');">
+  <div class="gallery-text">
+      <h3>Basketball</h3>
+      <div class="extra-info">
+        <p>Click to View More</p>
+    </div>
+  </div>
+</a>
+<a href="gallery-Wrestling.html" class="gallery-btn" style="background-image: url('photos/Galleries/Sports/wrestling.jpeg');">
+  <div class="gallery-text">
+      <h3>Wrestling</h3>
+      <div class="extra-info">
+        <p>Click to View More</p>
+    </div>
+  </div>
+</a>
+<!-- <a href="gallery-Tennis.html" class="gallery-btn" style="background-image: url('photos/Galleries/Sports/error.png');">
+  <div class="gallery-text">
+      <h3>Tennis</h3>
+      <div class="extra-info">
+        <p>Click to View More</p>
+    </div>
+  </div>
+</a> -->
+<a href="gallery-Pickleball.html" class="gallery-btn" style="background-image: url('photos/Galleries/Sports/pickleball.JPG');">
+  <div class="gallery-text">
+      <h3>Pickleball</h3>
+      <div class="extra-info">
+        <p>Click to View More</p>
+    </div>
+  </div>
+</a>
+<a href="gallery-Track&Field.html" class="gallery-btn" style="background-image: url('photos/Galleries/Sports/track&field.jpg');">
+  <div class="gallery-text">
+      <h3>Track & Field</h3>
+      <div class="extra-info">
+        <p>Click to View More</p>
+    </div>
+  </div>
+</a>
+<a href="gallery-Swim&Dive.html" class="gallery-btn" style="background-image: url('photos/Galleries/Sports/swim&dive.jpg');">
+  <div class="gallery-text">
+      <h3>Swim & Dive</h3>
+      <div class="extra-info">
+        <p>Click to View More</p>
+    </div>
+  </div>
+</a>
+<!-- <a href="gallery-Motorsports.html" class="gallery-btn" style="background-image: url('photos/Galleries/Sports/error.png');">
+  <div class="gallery-text">
+      <h3>Motorsports</h3>
+      <div class="extra-info">
+        <p>Click to View More</p>
+    </div>
+  </div>
+</a> -->
+<!-- <a href="gallery-Rodeo.html" class="gallery-btn" style="background-image: url('photos/Galleries/Sports/error.png');">
+  <div class="gallery-text">
+      <h3>Rodeo</h3>
+      <div class="extra-info">
+        <p>Click to View More</p>
+    </div>
+  </div>
+</a> -->
+    </div>
+
+    
+</section>
+
+    </div>
+</section>
+
+  <!--Instagram Section-->
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 My Yellow Project. All rights reserved.</p>
+    <p id="timer"></p>
+    <div class="social-media">
+      <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+  <script src="search.js"></script>
+  <script src="global.js"></script>
+  <script src="awards.js"></script>
+</body>
+</html>

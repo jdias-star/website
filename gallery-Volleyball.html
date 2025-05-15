@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Yellow Project Photography</title>
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <link rel="stylesheet" href="global.css" title="main-stylesheet">
+  <link rel="stylesheet" href="gallery.css">
+  <!-- <link rel="stylesheet" href="awards.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+  <ul class="menu left" id="navMenuLeft">
+    <li class="navButton"><a href="about.html">About</a></li>
+    <li class="navButton"><a href="gallery.html">Galleries</a></li>
+    <li class="navButton"><a href="awards.html">Awards</a></li>
+  </ul>
+
+  <h1 id="title">
+    <a href="index.html">My Yellow Project Photography</a>
+  </h1>
+
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+  <ul class="menu right" id="navMenuRight">
+    <li id="navContact"><a href="contact.html">Contact</a></li>
+  </ul>
+
+  <ul id="navHam" style="display: none;">
+    <li class="navButton"><a href="about.html">About</a></li>
+    <li class="navButton"><a href="gallery.html">Galleries</a></li>
+    <li class="navButton"><a href="awards.html">Awards</a></li>
+    <li class="navButton"><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+  <!-- SildeShow -->
+  <h2 class="title-case">Volleyball</h2>
+  <div class="container">
+        <div class="slideshowContainer">
+            <div id="slides"></div>
+            <div class="nav-buttons">
+              <button onclick="prevSlide()">⟵ Prev</button>
+              <button onclick="nextSlide()">Next ⟶</button>
+            </div>
+  </div>
+
+    </div>
+</section>
+
+<!--Gallery-->
+<div class="row">
+    <div class="column">
+      <img src="Photos\Galleries\Volleyball\IMG_6775.jpg">
+      <img src="Photos\Galleries\Volleyball\IMG_7214.jpg">
+      <img src="Photos\Galleries\Volleyball\IMG_3826.jpg">
+      <img src="Photos\Galleries\Volleyball\IMG_7042.jpg">
+      <img src="Photos\Galleries\Volleyball\IMG_7581.jpg">
+      <img src="Photos\Galleries\Volleyball\IMG_4252.jpg">
+      <img src="Photos\Galleries\Volleyball\IMG_6969.jpg">
+      <img src="Photos\Galleries\Volleyball\IMG_7130.jpg">
+      <img src="Photos\Galleries\Volleyball\IMG_6607.jpg">
+      <img src="Photos\Galleries\Volleyball\IMG_3770.jpg">
+      <img src="Photos\Galleries\Volleyball\IMG_6500.jpg">
+      <img src="Photos\Galleries\Volleyball\IMG_3935.jpg">
+      <img src="Photos\Galleries\Volleyball\IMG_4022.jpg">
+    </div>
+    <div class="column">
+      <img src="Photos\Galleries\Volleyball\IMG_7042.jpg">
+      <img src="Photos\Galleries\Volleyball\IMG_6610.jpg">
+      <img src="Photos\Galleries\Volleyball\IMG_3846.jpg">
+      <img src="Photos\Galleries\Volleyball\IMG_6392.jpg">
+      <img src="Photos\Galleries\Volleyball\IMG_3946.jpg">
+      <img src="Photos\Galleries\Volleyball\IMG_4153.jpg">
+      <img src="Photos\Galleries\Volleyball\IMG_3919.jpg">
+      <img src="Photos\Galleries\Volleyball\IMG_6552.jpg">
+      <img src="Photos\Galleries\Volleyball\IMG_3820.jpg">
+      <img src="Photos\Galleries\Volleyball\IMG_7540.jpg">
+      <img src="Photos\Galleries\Volleyball\IMG_7124.jpg">
+      <img src="Photos\Galleries\Volleyball\IMG_6776.jpg">
+      <img src="Photos\Galleries\Volleyball\IMG_6975.jpg">
+      </div>
+    <div class="column">
+      <img src="Photos\Galleries\Volleyball\IMG_4160.jpg">
+      <img src="Photos\Galleries\Volleyball\IMG_6578.jpg">
+      <img src="Photos\Galleries\Volleyball\IMG_3953.jpg">
+      <img src="Photos\Galleries\Volleyball\IMG_6686.jpg">
+      <img src="Photos\Galleries\Volleyball\IMG_3825.jpg">
+      <img src="Photos\Galleries\Volleyball\IMG_6488.jpg">
+      <img src="Photos\Galleries\Volleyball\IMG_3923.jpg">
+      <img src="Photos\Galleries\Volleyball\IMG_3889.jpg">
+      <img src="Photos\Galleries\Volleyball\IMG_7121.jpg">
+      <img src="Photos\Galleries\Volleyball\IMG_7006.jpg">
+      <img src="Photos\Galleries\Volleyball\IMG_7479.jpg">
+      <img src="Photos\Galleries\Volleyball\IMG_6903.jpg">
+      <img src="Photos\Galleries\Volleyball\IMG_7393.jpg">
+      </div>
+  </div>
+
+  
+  <!--Instagram Section-->
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 My Yellow Project. All rights reserved.</p>
+  <p id="timer"></p>
+  <div class="social-media">
+    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+  </div>
+</footer>
+
+  <script src="global.js"></script>
+  <script src="gallery-Volleyball.js"></script>
+</body>
+</html>

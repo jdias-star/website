@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Yellow Project Photography</title>
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <link rel="stylesheet" href="global.css" title="main-stylesheet">
+  <link rel="stylesheet" href="gallery.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+  <ul class="menu left" id="navMenuLeft">
+    <li class="navButton"><a href="about.html">About</a></li>
+    <li class="navButton"><a href="gallery.html">Galleries</a></li>
+    <li class="navButton"><a href="awards.html">Awards</a></li>
+  </ul>
+
+  <h1 id="title">
+    <a href="index.html">My Yellow Project Photography</a>
+  </h1>
+
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+  <ul class="menu right" id="navMenuRight">
+    <li id="navContact"><a href="contact.html">Contact</a></li>
+  </ul>
+
+  <ul id="navHam" style="display: none;">
+    <li class="navButton"><a href="about.html">About</a></li>
+    <li class="navButton"><a href="gallery.html">Galleries</a></li>
+    <li class="navButton"><a href="awards.html">Awards</a></li>
+    <li class="navButton"><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+  <!-- SildeShow -->
+  <h2 class="title-case">Baseball</h2>
+  <div class="container">
+        <div class="slideshowContainer">
+            <div id="slides"></div>
+            <div class="nav-buttons">
+              <button onclick="prevSlide()">⟵ Prev</button>
+              <button onclick="nextSlide()">Next ⟶</button>
+            </div>
+  </div>
+
+    </div>
+</section>
+
+<!--Gallery-->
+<div class="row">
+    <div class="column">
+      <img src="Photos\Galleries\Baseball\IMG_2010.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_1222.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_4363.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_0726.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_1156.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_7807.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_1396.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_1136.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_1498.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_1750.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_1241.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_4690.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_4993.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_4407.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_0951.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_8905.jpg">
+    </div>
+    <div class="column">
+      <img src="Photos\Galleries\Baseball\IMG_1100.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_1507.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_1209.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_1465.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_2406.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_1145.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_1390.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_1815.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_7831.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_9248.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_3040.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_7831.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_4373.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_4765.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_0839.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_6048.jpg">
+      
+      </div>
+      <div class="column">
+      <img src="Photos\Galleries\Baseball\IMG_1530.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_9330.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_0872.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_1472.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_3460.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_2461.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_1153.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_1825.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_6161.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_4796.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_1391.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_9220.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_1220.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_1117.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_4503.jpg">
+      <img src="Photos\Galleries\Baseball\IMG_2652.jpg">
+      </div>
+  </div>
+
+  
+  <!--Instagram Section-->
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 My Yellow Project. All rights reserved.</p>
+  <p id="timer"></p>
+  <div class="social-media">
+    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+  </div>
+</footer>
+
+  <script src="global.js"></script>
+  <script src="gallery-Baseball.js"></script>
+</body>
+</html>

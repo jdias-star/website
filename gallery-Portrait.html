@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Yellow Project Photography</title>
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <link rel="stylesheet" href="global.css" title="main-stylesheet">
+  <link rel="stylesheet" href="gallery.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+  <ul class="menu left" id="navMenuLeft">
+    <li class="navButton"><a href="about.html">About</a></li>
+    <li class="navButton"><a href="gallery.html">Galleries</a></li>
+    <li class="navButton"><a href="awards.html">Awards</a></li>
+  </ul>
+
+  <h1 id="title">
+    <a href="index.html">My Yellow Project Photography</a>
+  </h1>
+
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+  <ul class="menu right" id="navMenuRight">
+    <li id="navContact"><a href="contact.html">Contact</a></li>
+  </ul>
+
+  <ul id="navHam" style="display: none;">
+    <li class="navButton"><a href="about.html">About</a></li>
+    <li class="navButton"><a href="gallery.html">Galleries</a></li>
+    <li class="navButton"><a href="awards.html">Awards</a></li>
+    <li class="navButton"><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+  <!-- SildeShow -->
+  <h2 class="title-case">Portraits</h2>
+  <div class="container">
+        <div class="slideshowContainer">
+            <div id="slides"></div>
+            <div class="nav-buttons">
+              <button onclick="prevSlide()">⟵ Prev</button>
+              <button onclick="nextSlide()">Next ⟶</button>
+            </div>
+  </div>
+
+    </div>
+</section>
+
+<!--Gallery-->
+<div class="row">
+    <div class="column">
+        <img src="Photos\Galleries\Portraits\DSC_001.jpg">
+        <img src="Photos\Galleries\Portraits\DSC_0025.jpg">
+        <img src="Photos\Galleries\Portraits\DSC_0011.jpg">
+        <img src="Photos\Galleries\Portraits\DSC_0016.jpg">
+    </div>
+    <div class="column">
+        <img src="Photos\Galleries\Portraits\DSC_0006.jpg">
+        <img src="Photos\Galleries\Portraits\DSC_0017.jpg">
+        <img src="Photos\Galleries\Portraits\DSC_0012.jpg">
+        <img src="Photos\Galleries\Portraits\DSC_0027.jpg">
+      </div>
+      <div class="column">
+        <img src="Photos\Galleries\Portraits\DSC_0018.jpg">
+        <img src="Photos\Galleries\Portraits\IMG_2675.jpg">
+        <img src="Photos\Galleries\Portraits\DSC_0008.jpg">
+        <img src="Photos\Galleries\Portraits\DSC_0015.jpg">
+      </div>
+  </div>
+
+  
+  <!--Instagram Section-->
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 My Yellow Project. All rights reserved.</p>
+  <p id="timer"></p>
+  <div class="social-media">
+    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+  </div>
+</footer>
+
+  <script src="global.js"></script>
+  <script src="gallery-Portrait.js  "></script>
+</body>
+</html>
